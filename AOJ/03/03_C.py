@@ -1,8 +1,4 @@
-x, y = map(int, input().split())
-while x != 0 or y != 0:
-    if x >= y:
-        print(y, x)
-    else:
-        print(x, y)
-    x, y = map(int, input().split())
+for a in iter(input, '0 0'):
+    ln = sorted(map(int, a.split()))
+    print(ln[0], ln[1])
 
